@@ -7,8 +7,9 @@ import styled from "styled-components";
 const Layout = () => {
   return (
     <Container>
-      <Main>
+     
         <Header />
+        <Main>
         <Sider />
       </Main>
       <Outlet />
