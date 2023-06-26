@@ -68,11 +68,11 @@ font-size: 20px;
 `;
 const Icon1 = styled(GoSearch)`
 font-size: 20px;
-padding: 0 10px;
+padding-left :25px;
 `;
 const Input = styled.input`
-width: 90%;
-height: 95%;
+width: 85%;
+height: 90%;
 border-radius: 30px 0px 0px 30px;
 /* outline: 1px  solid lightgray; */
 border: 1px solid lightgray;
@@ -95,6 +95,7 @@ height: 45px;
 border-radius:30px;
 display: flex;
 align-items: center;
+
 /* border: 1px solid lightgray; */
 background-color: #e2e0e0;
 
@@ -145,6 +146,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 /* position: fixed; */
-background-color: wheat;
+background-color: white;
 `;
 

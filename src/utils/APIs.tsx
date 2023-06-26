@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const connection = axios.create({
+const url = axios.create({
   baseURL: "http://localhost:3000",
 });
 
 export const getAllEntries = async () => {
   try {
-    return await connection.get("/data").then((res) => {
+    return await url.get("/data").then((res) => {
       return res.data;
     });
   } catch (error) {
@@ -16,10 +16,10 @@ export const getAllEntries = async () => {
 
 export const addnewEntries = async (data:any) => {
   try {
-    await connection.post("/data", data).then((res)=>{
+    return await url.post("/data", data).then((res)=>{
         return res.data
     })
   } catch (error) {
-    console.log(error);
+    return error;
   }
 };

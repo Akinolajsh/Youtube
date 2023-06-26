@@ -30,9 +30,12 @@ const[show, setShow]= useState([
 }
 </SubHead>
       <Main> 
-{
-  
-}
+        <Youtube/>
+        <Youtube/>
+        <Youtube/>
+        <Youtube/>
+        <Youtube/>
+        <Youtube/>
       </Main>
     </Container>
        </Wrap>
@@ -63,10 +66,11 @@ align-items: center;
 const Main= styled.div`
 width: 100%;
 height: 100%;
-background-color: white;
+flex-wrap: wrap;
+/* background-color: red; */
 display: flex;
-flex-direction: column;
-/* justify-content: center; */
+/* flex-direction: column; */
+justify-content: center;
 /* align-items: center; */
 `
 const Container= styled.div`
